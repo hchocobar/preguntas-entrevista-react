@@ -1217,11 +1217,13 @@ Mientras que la biblioteca de *React*, a secas, es el motor de creación de comp
 
 ##### JavaScript que necesitas para aprender React
 
-**Para aprender y dominar React necesitas saber JavaScript.** A diferencia de otros frameworks y bibliotecas, como *Angular* y *Vue*, que se basan en su propio *DSL* (Domain-Specific Language), React usa una extensión de la sintaxis de JavaScript llamada *JSX*. Más adelante lo veremos en detalle pero, al final, no deja de ser azúcar sintáctico para escribir menos JavaScript.
+- **Para aprender y dominar React necesitas saber JavaScript.** A diferencia de otros frameworks y bibliotecas, como *Angular* y *Vue*, que se basan en su propio *DSL* (Domain-Specific Language), React usa una extensión de la sintaxis de JavaScript llamada *JSX*. Más adelante lo veremos en detalle pero, al final, no deja de ser azúcar sintáctico para escribir menos JavaScript.
 
-**En React todo es JavaScript.** Para bien y para mal. Este libro da por sentados unos conocimientos previos del lenguaje de programación pero antes de empezar vamos a hacer un pequeño repaso por algunas de las características más importantes que necesitarás conocer.
+- **En React todo es JavaScript.** Para bien y para mal. Este libro da por sentados unos conocimientos previos del lenguaje de programación pero antes de empezar vamos a hacer un pequeño repaso por algunas de las características más importantes que necesitarás conocer.
 
-**Si ya dominas JavaScript puedes saltarte este capítulo** y continuar con el libro, pero recuerda que siempre podrás revisar este capítulo como referencia.
+- **Si ya dominas JavaScript puedes saltarte este capítulo** y continuar con el libro, pero recuerda que siempre podrás revisar este capítulo como referencia.
+
+---
 
 ##### EcmaScript Modules o ESModules
 
@@ -1283,6 +1285,8 @@ Para empezar React te ofrece diferentes partes de su biblioteca a través de mó
 
 Además, por temas de optimización de rendimiento, podremos importar de forma dinámica componentes y así mejorar la experiencia de nuestros usuarios al necesitar cargar menos información para poder utilizar la página.
 
+---
+
 ##### Operador condicional (ternario)
 
 Las ternarias son una forma de realizar condiciones sin la necesidad de usar la sintaxis con `if`. Se podría decir que es una forma de atajo para evitar escribir tanto código.
@@ -1301,6 +1305,8 @@ number % 2 === 0 ? console.log('Es par') : console.log('Es impar')
 **¿Por qué es importante?**
 
 En las interfaces gráficas es muy normal que, dependiendo del estado de la aplicación o los datos que nos lleguen, vamos a querer renderizar una cosa u otra en pantalla. Para realizar esto, en lugar de utilizar `if` se usan las ternarias ya que queda mucho más legible dentro del *JSX*.
+
+---
 
 ##### Funciones flecha o Arrow Functions
 
@@ -1339,6 +1345,8 @@ Aunque hace unos años con React se trabajaba principalmente con clases, desde l
 
 Las funciones flecha, además, puedes verlas fácilmente conviviendo dentro de tus componentes. Por ejemplo, a la hora de renderizar una lista de elementos ejecutarás el método `.map` del array y, como callback, seguramente usarás una función flecha anónima.
 
+---
+
 ##### Parámetros predeterminados (default values)
 
 En JavaScript puedes proporcionar valores por defecto a los parámetros de una función en caso que no se le pase ningún argumento.
@@ -1368,6 +1376,8 @@ Poder añadir valores por defecto a los parámetros de esas funciones en el caso
 
 Los componentes, por ejemplo, pueden no recibir parámetros y, pese a ello, seguramente vas a querer que tengan algún comportamiento por defecto. Lo podrás conseguir de esta forma.
 
+---
+
 ##### Template Literals
 
 Los template literals o plantillas de cadenas llevan las cadenas de texto al siguiente nivel permitiendo expresiones incrustadas en ellas.
@@ -1391,6 +1401,8 @@ Además, nos permiten utilizar cadenas de texto de más de una línea.
 
 En React esto se puede utilizar para diferentes cosas. No sólo es normal crear cadenas de texto para mostrar en la interfaz... también puede ser útil para crear clases para tus elementos HTML de forma dinámica. Verás que los template literales están en todas partes.
 
+---
+
 ##### Propiedades abreviadas
 
 Desde *ECMAScript 2015* se puede iniciar un objeto utilizado nombre de propiedades abreviadas. Esto es que si quieres utilizar como valor una variable que tiene el mismo nombre que la key, entonces puedes indicar la inicialización una vez:
@@ -1410,6 +1422,8 @@ const persona = { name, age, book }
 **¿Por qué es importante?**
 
 En React se trata muchas veces con objetos y siempre vamos a querer escribir el menor número de líneas posible para mantener nuestro código fácil de mantener y entender.
+
+---
 
 ##### La desestructuración
 
@@ -1444,6 +1458,8 @@ getName(persona)
 **¿Por qué es importante?**
 
 En React hay mucho código básico que da por sentado que conoces y dominas esta sintaxis. Piensa que los objetos y los arreglos son tipos de datos que son perfectos para guardar datos a representar en una interfaz. Así que poder tratarlos fácilmente te va a hacer la vida mucho más fácil.
+
+---
 
 ##### Métodos de Array
 
@@ -1505,6 +1521,8 @@ networks.some(singleNetwork => singleNetwork.id === 'instagram') // true
 **¿Por qué es importante?**
 
 En React es muy normal almacenar los datos que tenemos que representar en la UI como array. Esto hace que muchas veces necesitemos tratarlos, filtrarlos o extraer información de ellos. Es primordial entender, conocer y dominar al menos estos métodos, ya que son los más usados.
+
+---
 
 ##### Sintaxis Spread
 
@@ -1578,6 +1596,8 @@ console.log(midu)
 
 En React es muy normal tener que añadir nuevos elementos a un array o crear nuevos objetos sin necesidad de mutarlos. El operador Rest nos puede ayudar a conseguir esto. Si no conoces bien el concepto de valor y referencia en JavaScript, sería conveniente que lo repases.
 
+---
+
 ##### Operador Rest
 
 La sintaxis `...` hace tiempo que funciona en JavaScript en los parámetros de una función. A esta técnica se le llamaba *parámetros rest* y nos permitía tener un número indefinido de argumentos en una función y poder acceder a ellos después como un array.
@@ -1625,6 +1645,8 @@ console.log(restOfNumbers) // -> [2, 3]
 **¿Por qué es importante?**
 
 Es una forma interesante de *eliminar* (de forma figurada) una propiedad de un objeto y creando una copia superficial del resto de propiedades. A veces puede ser interesante para extraer la información que queremos de unos parámetros y dejar el resto en un objeto que pasaremos hacia otro nivel.
+
+---
 
 ##### Encadenamiento opcional (Optional Chaining)
 
