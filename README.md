@@ -97,7 +97,7 @@
     - [¿Qué es el `StrictMode` en React?](#qué-es-el-strictmode-en-react)
     - [¿Por qué es recomendable exportar los componentes de React de forma nombrada?](#por-qué-es-recomendable-exportar-los-componentes-de-react-de-forma-nombrada)
     - [¿Cómo puedes exportar múltiples componentes de un mismo archivo?](#cómo-puedes-exportar-múltiples-componentes-de-un-mismo-archivo)
-    - [¿Cómo puedo importar de forma dinámica un componente en React?](#cómo-puedo-importar-de-forma-dinámica-un-componente-en-react)
+    - [¿Cómo puedo importar de forma dinámica un componente en React?](#cómo-puedo-importar-de-formasdfa-dinámica-un-componente-en-react)
     - [¿Cuando y por qué es recomendable importar componentes de forma dinámica?](#cuando-y-por-qué-es-recomendable-importar-componentes-de-forma-dinámica)
     - [¿Sólo se pueden cargar componentes de forma dinámica si se exportan por defecto?](#sólo-se-pueden-cargar-componentes-de-forma-dinámica-si-se-exportan-por-defecto)
     - [¿Qué es el contexto en React? ¿Cómo puedo crearlo y consumirlo?](#qué-es-el-contexto-en-react-cómo-puedo-crearlo-y-consumirlo)
