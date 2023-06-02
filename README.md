@@ -12,7 +12,7 @@
 
 ---
 
-## Índice
+## Índice:
 
 - [Índice](#índice)
   - [Principiante](#principiante)
